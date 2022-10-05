@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap");
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #242943;
+  color: #FFFFFF;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+h1, h2, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  padding-block: 1rem;
+}
+
+nav {
+  width: MIN(90%, 1500px);
+  margin-inline: auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.menu li {
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.menu li:hover, .menu li:focus, .menu li:active {
+  color: #9bf1ff;
+}
+
+.hero {
+  width: MIN(90%, 1500px);
+  margin-inline: auto;
+  padding-block: 6rem;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+}
+
+.hero hr {
+  border: 1px solid #FFFFFF;
+  margin-block: 2.5rem;
+}
+
+.hero div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.hero button {
+  background: none;
+  text-transform: uppercase;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding: 0.8rem 1.6rem;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+}
+/*# sourceMappingURL=style.css.map */
