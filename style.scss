@@ -22,7 +22,7 @@ body {
   font-family: $font-family;
 }
 
-h1, h2, ul, p {
+h1, h2, h3, ul, p {
   margin: 0;
 }
 
@@ -37,7 +37,11 @@ button {
 
 // Header
 header {
-  padding-block: 1rem;
+  padding-block: 1.5rem;
+  position: sticky;
+  top: 0;
+  background: $clr-primary;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0.25em 0px
 }
 
 nav {
@@ -68,10 +72,10 @@ nav {
 .hero {
   width: MIN(90%, 1500px);
   margin-inline: auto;
-  padding-block: 6rem;
+  padding-block: 9rem;
 
   h1 {
-    font-size: 3.2rem;
+    font-size: 3.25rem;
   }
 
   hr {
@@ -86,7 +90,7 @@ nav {
     font-weight: 600;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   button {
@@ -94,10 +98,106 @@ nav {
     text-transform: uppercase;
     border: 2px solid $clr-neutral-100;
     color: $clr-neutral-100;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.8rem 1.6rem;
     font-family: $font-family;
     font-weight: 600;
     letter-spacing: 0.25rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    transition: color 0.3s;
+
+    &:hover, &:focus, &:active {
+      border-color: $clr-secondary;
+      color: $clr-secondary
+    }
+  }
+}
+
+// Projects
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  max-height: 40em;
+  min-height: 23em;
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+  transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+  padding: 4em 4em 2em 4em ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: default;
+
+  .image {
+    display: none;
+  }
+
+  .info {
+    position: relative;
+    z-index: 3;
+    width: max-content;
+		margin-bottom: 2em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h3 a:hover {
+  }
+
+  &::before {
+    transition: opacity 0.5s ease;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &::after {
+    background-color: rgba(36, 41, 67, 0.25);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    opacity: 0;
+  }
+
+  &:nth-child(4n - 1), &:nth-child(4n - 2) {
+    width: 60%;
+  }
+
+  &:nth-child(1) {
+    background-image: url('assets/pic01.jpg');
+  }
+
+  &:nth-child(1):before {
+    background-color: #6fc3df;
+  }
+  
+  &:nth-child(2):before {
+    background-color: #8d82c4;
   }
 }
