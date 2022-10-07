@@ -20,6 +20,7 @@ body {
   background-color: $clr-primary;
   color: $clr-neutral-100;
   font-family: $font-family;
+  overflow-x: hidden; // Avoid showing horizontal scrollbar on animations
 }
 
 h1, h2, h3, ul, p {
@@ -88,7 +89,7 @@ nav {
 .hero {
   width: MIN(90%, 1500px);
   margin-inline: auto;
-  padding-block: 9.5rem;
+  padding-block: 10rem;
 
   h1 {
     font-size: 3.3rem;

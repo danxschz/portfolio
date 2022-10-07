@@ -8,6 +8,7 @@
   <meta name="description" content="Daniel Sanchez. Web Developer Portfolio">
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/92d46d99be.js" crossorigin="anonymous" defer></script>
   <script src="index.js" defer></script>
   <title>Daniel Sanchez - Web Developer</title>
@@ -39,28 +40,28 @@
 
     <!-- Projects -->
     <div class="projects">
-      <a href="#" class="project">
+      <a href="#" class="project" data-aos="fade-right">
         <div class="info">
           <h3>The Rage Lab</h3>
           <hr>
           <p>E-commerce shop focused on pop culture themed cases</p>
         </div>
       </a>
-      <a href="#" class="project">
+      <a href="#" class="project" data-aos="fade-down">
         <div class="info">
           <h3>The Rage Lab</h3>
           <hr>
           <p>E-commerce shop focused on pop culture themed cases</p>
         </div>
       </a>
-      <a href="#" class="project">
+      <a href="#" class="project" data-aos="fade-up">
         <div class="info">
           <h3>The Rage Lab</h3>
           <hr>
           <p>E-commerce shop focused on pop culture themed cases</p>
         </div>
       </a>
-      <a href="#" class="project">
+      <a href="#" class="project" data-aos="fade-left">
         <div class="info">
           <h3>The Rage Lab</h3>
           <hr>
@@ -120,5 +121,11 @@
   </main>
 
   <!-- Footer -->
+
+  <!-- Animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 600 });
+  </script>
 </body>
 </html>

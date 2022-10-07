@@ -10,6 +10,7 @@ body {
   background-color: #242943;
   color: #FFFFFF;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, ul, p {
@@ -83,7 +84,7 @@ nav {
 .hero {
   width: MIN(90%, 1500px);
   margin-inline: auto;
-  padding-block: 9.5rem;
+  padding-block: 10rem;
 }
 
 .hero h1 {
