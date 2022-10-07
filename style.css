@@ -229,6 +229,19 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 60%;
 }
 
 form {
@@ -239,7 +252,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
+  width: MIN(100%, 900px);
   gap: 2rem;
   padding-block: 5rem;
   padding-inline: 4rem;
@@ -301,5 +314,80 @@ button[type="submit"] {
 
 button[type="submit"]:hover, button[type="submit"]:focus, button[type="submit"]:active {
   background-color: #9bf1ff;
+}
+
+.methods {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+.method-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+}
+
+.method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.8rem;
+  padding-inline: 4rem;
+}
+
+.round-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.round-icon i {
+  color: #242943;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.8rem;
+  margin-top: 0.5rem;
+}
+
+.details h3 {
+  font-size: 1.6rem;
+}
+
+.details a {
+  color: #FFFFFF;
+  border-bottom: 1px dotted #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */

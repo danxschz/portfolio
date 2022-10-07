@@ -33,7 +33,7 @@
       <hr>
       <div>
         <p>A Full Stack Web Developer.</p>
-        <button><span>Check my work</span><i class="fa-solid fa-arrow-right"></i></button>
+        <button id="check"><span>Check my work</span><i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
 
@@ -71,28 +71,54 @@
 
     <!-- Contact -->
     <div class="contact">
-      <form action="">
-        <div class="inputs">
-          <div class="input">
-            <label for="name">Name</label>
-            <input type="text" id="name" autocomplete="name">
+      <!-- Form -->
+      <div class="form-wrapper">
+        <form action="">
+          <div class="inputs">
+            <div class="input">
+              <label for="name">Name</label>
+              <input type="text" id="name" autocomplete="name">
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" id="email">
+            </div>
           </div>
           <div class="input">
-            <label for="email">Email</label>
-            <input type="email" id="email">
+            <label for="message">Message</label>
+            <textarea id="message" rows="12"></textarea>
           </div>
-        </div>
-        <div class="input">
-          <label for="message">Message</label>
-          <textarea id="message" rows="12"></textarea>
-        </div>
-        <div class="buttons">
-          <button type="submit">Send message</button>
-          <button type="reset">Clear</button>
-        </div>
-      </form>
-      <div>Test</div>
+          <div class="buttons">
+            <button type="submit">Send message</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Methods -->
+      <div class="methods">
+          <div class="method-wrapper">
+            <div class="method">
+              <div class="round-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="details">
+                <h3>Email</h3>
+                <a href="mailto:danxschz@gmail.com">danxschz@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="method-wrapper">
+            <div class="method">
+              <div class="round-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="details">
+                <h3>Email</h3>
+                <a href="mailto:danxschz@gmail.com">danxschz@gmail.com</a>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
   </main>
+
+  <!-- Footer -->
 </body>
 </html>
