@@ -398,4 +398,33 @@ button[type="submit"]:hover, button[type="submit"]:focus, button[type="submit"]:
   color: #9bf1ff;
   border-bottom-color: #242943;
 }
+
+footer {
+  border-top: solid 1px rgba(212, 212, 255, 0.1);
+  padding-inline: 4rem;
+  padding-block: 5rem;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.socials a div {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.socials a div:hover, .socials a div:focus, .socials a div:active {
+  background-color: #9bf1ff;
+}
 /*# sourceMappingURL=style.css.map */
