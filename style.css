@@ -195,7 +195,7 @@ nav {
 }
 
 .project:nth-child(1) {
-  background-image: url("assets/pic01.jpg");
+  background-image: url("assets/yum.jpg");
 }
 
 .project:nth-child(1)::before {
@@ -203,23 +203,23 @@ nav {
 }
 
 .project:nth-child(2) {
-  background-image: url("assets/pic02.jpg");
+  background-image: url("assets/trl.jpg");
 }
 
 .project:nth-child(2)::before {
-  background-color: #8d82c4;
-}
-
-.project:nth-child(3) {
-  background-image: url("assets/pic02.jpg");
-}
-
-.project:nth-child(3)::before {
   background-color: #ec8d81;
 }
 
+.project:nth-child(3) {
+  background-image: url("assets/otg.jpg");
+}
+
+.project:nth-child(3)::before {
+  background-color: #87c5a4;
+}
+
 .project:nth-child(4) {
-  background-image: url("assets/pic01.jpg");
+  background-image: url("assets/yum.jpg");
 }
 
 .project:nth-child(4)::before {
@@ -390,5 +390,12 @@ button[type="submit"]:hover, button[type="submit"]:focus, button[type="submit"]:
   border-bottom: 1px dotted #FFFFFF;
   text-decoration: none;
   font-size: 1.2rem;
+  -webkit-transition: color 0.3s, border-bottom-color 0.3s;
+  transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.details a:hover, .details a:focus, .details a:active {
+  color: #9bf1ff;
+  border-bottom-color: #242943;
 }
 /*# sourceMappingURL=style.css.map */
