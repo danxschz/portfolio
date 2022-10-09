@@ -195,7 +195,7 @@ nav {
 }
 
 .project:nth-child(1) {
-  background-image: url("assets/yum.jpg");
+  background-image: url("assets/img/yum.jpg");
 }
 
 .project:nth-child(1)::before {
@@ -203,7 +203,7 @@ nav {
 }
 
 .project:nth-child(2) {
-  background-image: url("assets/trl.jpg");
+  background-image: url("assets/img/trl.jpg");
 }
 
 .project:nth-child(2)::before {
@@ -211,7 +211,7 @@ nav {
 }
 
 .project:nth-child(3) {
-  background-image: url("assets/otg.jpg");
+  background-image: url("assets/img/otg.jpg");
 }
 
 .project:nth-child(3)::before {
@@ -219,7 +219,7 @@ nav {
 }
 
 .project:nth-child(4) {
-  background-image: url("assets/yum.jpg");
+  background-image: url("assets/img/yum.jpg");
 }
 
 .project:nth-child(4)::before {
@@ -336,6 +336,9 @@ button[type="submit"]:hover, button[type="submit"]:focus, button[type="submit"]:
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.method-wrapper:first-child {
   border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 }
 
