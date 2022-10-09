@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/92d46d99be.js" crossorigin="anonymous" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <script src="index.js" defer></script>
   <title>Daniel Sanchez - Web Developer</title>
 </head>
@@ -36,49 +37,49 @@
   <!-- Main -->
   <main>
     <!-- Hero -->
-    <div class="hero">
+    <section class="hero">
       <h1>Hi, my name is Daniel Sanchez</h1>
       <hr>
       <div>
         <p>A Full Stack Web Developer.</p>
         <button id="check"><span>Check my work</span><i class="fa-solid fa-arrow-right"></i></button>
       </div>
-    </div>
+    </section>
 
     <!-- Projects -->
-    <div class="projects">
+    <section class="projects">
       <a href="#" target="_blank" rel="noreferrer" class="project" data-aos="fade-right">
         <div class="info">
-          <h3>WIP</h3>
+          <h2>WIP</h2>
           <hr>
           <p>WIP WIP WIP WIP WIP WIP WIP</p>
         </div>
       </a>
       <a href="#" target="_blank" rel="noreferrer" class="project" data-aos="fade-down">
         <div class="info">
-          <h3>The Rage Lab</h3>
+          <h2>The Rage Lab</h2>
           <hr>
           <p>E-commerce website focused on pop culture themed phone cases</p>
         </div>
       </a>
       <a href="#" target="_blank" rel="noreferrer" class="project" data-aos="fade-up">
         <div class="info">
-          <h3>Off The Grid</h3>
+          <h2>Off The Grid</h2>
           <hr>
           <p>Cryptocurrency app to keep track of price, volume and market capitalization for 13,000+ coins</p>
         </div>
       </a>
       <a href="#" target="_blank" rel="noreferrer" class="project" data-aos="fade-left">
         <div class="info">
-          <h3>Yumi</h3>
+          <h2>Yumi</h2>
           <hr>
           <p>Ramen establishment website</p>
         </div>
       </a>
-    </div>
+    </section>
 
     <!-- Contact -->
-    <div class="contact">
+    <section class="contact">
       <!-- Form -->
       <div class="form-wrapper">
         <form action="https://formspree.io/f/xaykbywz" method="POST">
@@ -109,7 +110,7 @@
             <div class="method">
               <div class="round-icon"><i class="fa-solid fa-envelope"></i></div>
               <div class="details">
-                <h3>Email</h3>
+                <h2>Email</h2>
                 <a href="mailto:danxschz@gmail.com">danxschz@gmail.com</a>
               </div>
             </div>
@@ -118,13 +119,13 @@
             <div class="method">
               <div class="round-icon"><i class="fa-brands fa-linkedin-in"></i></div>
               <div class="details">
-                <h3>LinkedIn</h3>
+                <h2>LinkedIn</h2>
                 <a href="https://www.linkedin.com/in/danxschz/">in/danxschz</a>
               </div>
             </div>
           </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -137,9 +138,8 @@
   </footer>
 
   <!-- Animations -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 600 });
+    setTimeout(() => AOS.init({ duration: 600 }), 1000);
   </script>
 </body>
 </html>
