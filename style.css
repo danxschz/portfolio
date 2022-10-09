@@ -403,9 +403,25 @@ button[type="submit"]:hover, button[type="submit"]:focus, button[type="submit"]:
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
   border-top: solid 1px rgba(212, 212, 255, 0.1);
   padding-inline: 4rem;
-  padding-block: 5rem;
+  padding-block: 4rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: rgba(244, 244, 255, 0.2);
 }
 
 .socials {
@@ -415,7 +431,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .socials a {
@@ -484,9 +500,13 @@ footer {
   }
   .methods {
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .method {
     padding-block: 2rem;
+    width: 100%;
   }
   footer {
     padding-block: 2rem;
