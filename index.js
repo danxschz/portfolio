@@ -12,10 +12,11 @@ const scrollIntoElement = (e) => {
   e.preventDefault();
   const element = document.querySelector(`.${e.target.getAttribute('id')}`);
   const position = getElementPosition(element).top;
+  const headerHeight = document.querySelector('header').clientHeight;
 
-  // I'm using this method instead of element.scrollIntoView() so that I can offset the sticky nav (height of 66px)
+  // I'm using this method instead of element.scrollIntoView() to avoid covering the top of the element with the sticky nav
   window.scroll({
-    top: position - 66,
+    top: position - headerHeight,
     behavior: 'smooth'
   });
 }
@@ -43,9 +44,10 @@ const checkBtn = document.querySelector('#check');
 checkBtn.addEventListener('click', () => {
   const projects = document.querySelector('.projects');
   const position = getElementPosition(projects).top;
+  const headerHeight = document.querySelector('header').clientHeight;
 
   window.scroll({
-    top: position - 66,
+    top: position - headerHeight,
     behavior: 'smooth'
   });
 });

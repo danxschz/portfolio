@@ -20,7 +20,6 @@ body {
   background-color: $clr-primary;
   color: $clr-neutral-100;
   font-family: $font-family;
-  overflow-x: hidden; // Avoid showing horizontal scrollbar on animations
 }
 
 h1, h2, h3, ul, p {
@@ -121,6 +120,7 @@ nav {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden; // Avoid showing scrollbar on animations
 }
 
 .project {
@@ -369,5 +369,70 @@ footer {
         background-color: $clr-secondary;
       }
     }
+  }
+}
+
+@media (min-width: 1536px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-block: 1.2rem;
+  }
+
+  .menu {
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    text-align: center;
+
+    div {
+      flex-direction: column;
+    }
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    text-align: center;
+    width: 100%;
+
+    &:nth-child(4n - 1), &:nth-child(4n - 2) {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+  }
+
+  form {
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    border-right: none;
+  }
+
+  .methods {
+    width: 100%;
+  }
+
+  .method {
+    padding-block: 2rem;
+  }
+
+  footer {
+    padding-block: 2rem;
   }
 }
