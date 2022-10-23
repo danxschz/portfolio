@@ -19,7 +19,7 @@
   </p>
 
   <h4>
-    <a href="https://danxschz.github.io/portfolio">View Portfolio</a>
+    <a href="https://danxschz.com">View Portfolio</a>
     <span> · </span>
     <a href="https://github.com/danxschz/portfolio/issues/">Report Bug</a>
   </h4>
@@ -31,4 +31,4 @@ Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact
 
-Daniel Sanchez (@danxschz) - danxschz@gmail.com
+Daniel Sanchez (@danxschz) · [Portfolio](https://danxschz.com) · contact@danxschz.com
